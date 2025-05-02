@@ -17,6 +17,6 @@ RUN apk add --no-cache ca-certificates
 
 WORKDIR /app
 
-COPY --from=builder /app/log-receiver .
+COPY --from=builder /app/promsql .
 
 ENTRYPOINT ["./promsql"]
